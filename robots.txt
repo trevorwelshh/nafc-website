@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://notafilmcamera.com/sitemap.xml
+Sitemap: https://latercamera.app/sitemap.xml
