@@ -82,21 +82,6 @@ a:hover { text-decoration: underline; }
 	display: block;
 	margin: 0 auto 30px;
 	filter: drop-shadow(0 14px 40px rgba(0, 0, 0, 0.45));
-	position: relative;
-}
-/* A whisper of the orb's warmth behind the icon, from the new logo's
-   gradient (#F3683F to #FFEABB). */
-.hero .container { position: relative; }
-.hero .container::before {
-	content: "";
-	position: absolute;
-	top: -60px;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 340px;
-	height: 340px;
-	background: radial-gradient(circle, rgba(243, 104, 63, 0.16), transparent 65%);
-	pointer-events: none;
 }
 .hero .eyebrow {
 	color: var(--text-faint);
