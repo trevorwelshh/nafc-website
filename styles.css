@@ -1,7 +1,7 @@
 /* L8R site styles, matched to the app's color tokens (Assets.xcassets/Colors/UI) */
 
 :root {
-	--bg: #080808;              /* background */
+	--bg: #0a0a0a;              /* background */
 	--bg-soft: #121212;         /* secondaryBackground */
 	--surface: #1a1a1a;         /* tertiaryBackground */
 	--text: #f4f4f2;            /* label */
@@ -18,7 +18,7 @@
 /* App tokens are authored in Display P3; match them exactly where supported. */
 @supports (color: color(display-p3 1 1 1)) {
 	:root {
-		--bg: color(display-p3 0.031 0.031 0.031);
+		--bg: color(display-p3 0.039 0.039 0.039);
 		--bg-soft: color(display-p3 0.071 0.071 0.071);
 		--surface: color(display-p3 0.102 0.102 0.102);
 		--text: color(display-p3 0.957 0.957 0.949);
@@ -44,7 +44,8 @@ body {
 	flex-direction: column;
 }
 
-h1, h2, h3 { font-weight: 500; }
+/* Titles are semibold since the app's 7.6.0 type pass (title style). */
+h1, h2, h3 { font-weight: 600; }
 
 a { color: var(--text); text-decoration: none; }
 a:hover { text-decoration: underline; }
@@ -81,6 +82,21 @@ a:hover { text-decoration: underline; }
 	display: block;
 	margin: 0 auto 30px;
 	filter: drop-shadow(0 14px 40px rgba(0, 0, 0, 0.45));
+	position: relative;
+}
+/* A whisper of the orb's warmth behind the icon, from the new logo's
+   gradient (#F3683F to #FFEABB). */
+.hero .container { position: relative; }
+.hero .container::before {
+	content: "";
+	position: absolute;
+	top: -60px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 340px;
+	height: 340px;
+	background: radial-gradient(circle, rgba(243, 104, 63, 0.16), transparent 65%);
+	pointer-events: none;
 }
 .hero .eyebrow {
 	color: var(--text-faint);
@@ -102,7 +118,8 @@ a:hover { text-decoration: underline; }
 	margin: 0 auto 34px;
 }
 
-/* App Store button: the app's RectangleButton: white slab, dark text. */
+/* App Store button: the app's RectangleButton: white slab, dark text,
+   radius 20 and semibold label since the 7.6.0 pass. */
 .appstore-btn {
 	display: inline-flex;
 	align-items: center;
@@ -110,8 +127,8 @@ a:hover { text-decoration: underline; }
 	background: var(--text);
 	color: var(--bg);
 	padding: 14px 22px;
-	border-radius: 12px;
-	font-weight: 500;
+	border-radius: 20px;
+	font-weight: 600;
 	font-size: 1.02rem;
 	transition: transform 0.15s ease, opacity 0.15s ease;
 }
@@ -140,15 +157,14 @@ a:hover { text-decoration: underline; }
 .content li { margin-bottom: 8px; }
 .content a { color: var(--accent); word-break: break-word; }
 
-/* Footer: quiet caps, like the app's legal row. */
+/* Footer: quiet sentence case, like the app's legal row (the caps went
+   with the 7.6.0 sentence-case pass). */
 .site-footer {
 	border-top: 1px solid var(--border);
 	padding: 32px 0;
 	color: var(--text-faint);
-	font-size: 0.75rem;
+	font-size: 0.8rem;
 	font-weight: 500;
-	text-transform: uppercase;
-	letter-spacing: 0.08em;
 }
 .footer-inner {
 	display: flex;

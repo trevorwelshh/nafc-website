@@ -1,11 +1,9 @@
-<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="128" cy="128" r="128" fill="url(#paint0_radial_502_2114)"/>
+<svg width="646" height="646" viewBox="0 0 646 646" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="323" cy="323" r="323" fill="url(#paint0_linear_673_5008)"/>
 <defs>
-<radialGradient id="paint0_radial_502_2114" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(128.203 -6.57827e-06) rotate(90) scale(256 256.815)">
-<stop stop-color="#EAB41C"/>
-<stop offset="0.442708" stop-color="#FF4744"/>
-<stop offset="0.65625" stop-color="#FF447A"/>
-<stop offset="0.932292" stop-color="#3C7DAB"/>
-</radialGradient>
+<linearGradient id="paint0_linear_673_5008" x1="646" y1="322.743" x2="-1.07011e-06" y2="323.257" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFEABB"/>
+<stop offset="1" stop-color="#F3683F"/>
+</linearGradient>
 </defs>
 </svg>
