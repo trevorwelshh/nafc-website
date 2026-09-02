@@ -81,6 +81,7 @@ a:hover { text-decoration: underline; }
 	height: 104px;
 	display: block;
 	margin: 0 auto 30px;
+	border-radius: 22.4%;
 	filter: drop-shadow(0 14px 40px rgba(0, 0, 0, 0.18));
 }
 .hero .eyebrow {
